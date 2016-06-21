@@ -93,8 +93,9 @@ lang.mergeOptions = function() {
 
   _.toArray(arguments).forEach(function(partial) {
     options = _.mergeWith(options, partial, optionCustomizer)
-  })
+  });
 
+  return options;
 }
 
 // 参数合并策略
