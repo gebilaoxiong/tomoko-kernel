@@ -1,0 +1,11 @@
+{
+  "name": "tomoko-kernel",
+  "version": "0.0.1",
+  "main": "tomoko-kernel.js",
+  "author": "gebilaoxiong <gebilaoxiong@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^4.13.1"
+  }
+}
