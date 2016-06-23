@@ -17,6 +17,7 @@ Object.defineProperty(global, 'tomoko', {
 });
 
 
+
 // 工具
 tomoko.util = require('util');
 

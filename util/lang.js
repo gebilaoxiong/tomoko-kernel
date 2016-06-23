@@ -49,6 +49,30 @@ lang.extend = _.assignIn;
 
 
 /**
+ * 字符串处理:pad
+ * @param  {String}                   str               需要处理的字符串
+ * @param  {Number}                   len               长度
+ * @param  {String}                   fill              填充文本
+ * @param  {Boolean}                  pre               填充方向 默认为左
+ */
+lang.pad = function(str, len, fill, pre) {
+
+  if (str.length < len) {
+    // 填充文本
+    fill = Array(len).join(fill || ' ');
+
+    if (pre) {
+      str = (fill + str).slice(-len);
+    } else {
+      str = (str + fill).subString(0, len);
+    }
+  }
+
+  return str;
+}
+
+
+/**
  * 类型定义工厂
  */
 lang.define = function( /* parent, [partial]... */ ) {

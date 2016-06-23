@@ -10,6 +10,3 @@ var $ = require('./lang');
 // 语言扩展
 $.extend(exports, $);
 
-// 文件处理
-$.extend(exports, require('./file'));
-
