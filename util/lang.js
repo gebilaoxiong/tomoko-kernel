@@ -9,7 +9,7 @@ var _ = require('lodash'),
 
   arraySlice = Array.prototype.slice,
 
-  lang = module.exports;
+  lang = exports;
 
 
 /**
@@ -64,7 +64,7 @@ lang.pad = function(str, len, fill, pre) {
     if (pre) {
       str = (fill + str).slice(-len);
     } else {
-      str = (str + fill).subString(0, len);
+      str = (str + fill).substring(0, len);
     }
   }
 

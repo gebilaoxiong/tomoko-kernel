@@ -19,7 +19,7 @@ Object.defineProperty(global, 'tomoko', {
 
 
 // 工具
-tomoko.util = require('util');
+tomoko.util = require('./util');
 
 // 日志
 tomoko.log = require('./lib/log');
