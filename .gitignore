@@ -172,11 +172,4 @@ output/**
 /.idea
 .idea
 
-#################
-## 移除rk data 数据以及server.conf 避免相互影响
-#################
-
-test/page/**
-/test/ajax
-/test/ajax
-/test/ajax
+node_modules/
