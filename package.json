@@ -1,6 +1,6 @@
 {
   "name": "tomoko-kernel",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "tomoko-kernel.js",
   "author": "gebilaoxiong <gebilaoxiong@gmail.com>",
   "license": "ISC",
