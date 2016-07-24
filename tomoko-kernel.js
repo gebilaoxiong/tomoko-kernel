@@ -6,7 +6,9 @@
  */
 var tomoko = module.exports,
 
-  fs = require('fs');
+  fs = require('fs'),
+
+  pkg;
 
 
 // project environment
@@ -16,15 +18,20 @@ Object.defineProperty(global, 'tomoko', {
   value: tomoko
 });
 
+// 工具函数
+tomoko.util = require('./lib/utils');
+
+// 模块信息
+pkg = tomoko.util.readJSON('./package.json');
+
+// 版本号
+tomoko.version = pkg.version;
 
 // 模块前缀
 tomoko.prefix = ['tomoko'];
 
 //日志操作
 tomoko.log = require('./lib/log');
-
-// 工具函数
-tomoko.util = require('./lib/utils');
 
 // 模块加载器
 tomoko.require = require('./lib/require.js');
@@ -37,3 +44,4 @@ tomoko.Base = require('./lib/base.js');
 
 // 配置类型
 tomoko.Config = require('./lib/config.js');
+

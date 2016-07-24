@@ -1,6 +1,7 @@
 {
   "name": "tomoko-kernel",
   "version": "0.1.1",
+  "description": "智子核心",
   "main": "tomoko-kernel.js",
   "author": "gebilaoxiong <gebilaoxiong@gmail.com>",
   "license": "ISC",
