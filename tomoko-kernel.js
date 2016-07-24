@@ -17,27 +17,23 @@ Object.defineProperty(global, 'tomoko', {
 });
 
 
+// 模块前缀
+tomoko.prefix = ['tomoko'];
 
-// 工具
-tomoko.util = require('./util');
-
-// 日志
+//日志操作
 tomoko.log = require('./lib/log');
 
-// 模块加载
-tomoko.require = require('./lib/require');
+// 工具函数
+tomoko.util = require('./lib/utils');
+
+// 模块加载器
+tomoko.require = require('./lib/require.js');
+
+// 抽象类型
+tomoko.Abstract = require('./lib/abstract.js');
+
+// 基础类型
+tomoko.Base = require('./lib/base.js');
 
 // 配置类型
-tomoko.Configuration = require('./lib/config');
-
-// 配置对象
-tomoko.config = new tomoko.Configuration();
-
-// 项目
-tomoko.project = require('./lib/project');
-
-// tomoko info
-tomoko.info = require('./package.json');
-
-// 版本号
-tomoko.version = tomoko.info.version;
+tomoko.Config = require('./lib/config.js');
