@@ -1,0 +1,21 @@
+{
+  "name": "tomoko-kernel",
+  "version": "0.1.3",
+  "description": "智子核心",
+  "main": "tomoko-kernel.js",
+  "author": "gebilaoxiong <gebilaoxiong@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "mocha test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gebilaoxiong/tomoko-kernel.git"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3"
+  }
+}
