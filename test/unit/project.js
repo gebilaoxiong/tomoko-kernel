@@ -60,7 +60,7 @@ describe('测试项目：Project', function() {
       }
 
       project.setTempRoot(path);
-      expect(project.getTempRoot('')).to.equal(path);
+      expect(project.getTempPath('')).to.equal(path);
     });
   });
 
@@ -70,7 +70,7 @@ describe('测试项目：Project', function() {
       var result = pth.join(process.cwd(), '/test/unit/test_temp/')
         .replace(/\\/g, '/');
 
-      expect(project.getTempRoot('')).to.equal(result)
+      expect(project.getTempPath('')).to.equal(result)
     });
   });
 
