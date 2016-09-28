@@ -60,5 +60,8 @@ tomoko.Cache = require('./lib/cache');
 // 释放
 tomoko.release = require('./lib/release');
 
+// 文件
+tomoko.File = require('./lib/file');
+
 // 版本号
 tomoko.version = tomoko.util.readJSON(__dirname + '/package.json').version;
