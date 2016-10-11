@@ -8,10 +8,6 @@
   "scripts": {
     "test": "mocha test/unit"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gebilaoxiong/tomoko-kernel.git"
-  },
   "dependencies": {
     "chai": "^3.5.0",
     "del": "^2.2.2",
